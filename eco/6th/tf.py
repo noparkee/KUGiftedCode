@@ -13,8 +13,8 @@ def LinearRegression(step, lr, data):     # hum 에 관해서 setp: 몇 번 학�
     x_data = time
     y_data = hum
 
-    b_initial = hum[0]
-    w_initial = (hum[1] - hum[0])
+    b_initial = hum[1]
+    w_initial = (hum[2] - hum[1])
 
     b = tf.Variable(b_initial)
     w = tf.Variable(w_initial)
